@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE futbol [
+
+        <!ELEMENT futbol (resultados+, estadisticas)>
+        <!ATTLIST equipo Racha (CruzAzul | Santos) #REQUIRED>
+        <!ELEMENT resultados (equipo)>
+        <!ELEMENT equipo (partido)*>
+        <!ELEMENT partido (ultimospartidos, fecha, competencia)>
+
+        <!ELEMENT estadisticas (liga, estadisticasde)>
+        <!ELEMENT estadisticasde (TotalGoles, GolesConsedidos, DiferenciasGoles, Asistencias)>
+        <!ELEMENT TotalGoles (CruzAzul, Santos)>
+        <!ELEMENT GolesConsedidos (CruzAzul, Santos)>
+        <!ELEMENT DiferenciasGoles (CruzAzul, Santos)>
+        <!ELEMENT Asistencias (CruzAzul, Santos)>
+
+
+        <!ELEMENT CruzAzul (#PCDATA)>
+        <!ELEMENT Santos (#PCDATA)>
+        <!ELEMENT liga (#PCDATA)>
+        <!ELEMENT ultimospartidos (#PCDATA)>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ELEMENT competencia (#PCDATA)>
+
+        ]>
+
+<futbol>
+    <resultados>
+        <equipo Racha="CruzAzul">
+            <partido>
+                <ultimospartidos>Cruz Azul 3-1 Forge FC</ultimospartidos>
+                <fecha>24 Feb, 2022</fecha>
+                <competencia>CONCACAF Liga Campeones</competencia>
+            </partido>
+            <partido>
+                <ultimospartidos>Toluca	1-4	Cruz Azul</ultimospartidos>
+                <fecha>20 Feb, 2022</fecha>
+                <competencia>Mexican Liga BBVA MX</competencia>
+            </partido>
+            <partido>
+                <ultimospartidos>Forge FC	0-1	Cruz Azul</ultimospartidos>
+                <fecha>16 Feb, 2022</fecha>
+                <competencia>CONCACAF Liga Campeones</competencia>
+            </partido>
+            <partido>
+                <ultimospartidos>Cruz Azul	2-1	Necaxa</ultimospartidos>
+                <fecha>12 Feb, 2022</fecha>
+                <competencia>Mexican Liga BBVA MX</competencia>
+            </partido>
+            <partido>
+                <ultimospartidos>León	0-1	Cruz Azul</ultimospartidos>
+                <fecha>7 Feb, 2022</fecha>
+                <competencia>Mexican Liga BBVA MX</competencia>
+            </partido>
+        </equipo>
+    </resultados>
+
+    <resultados>
+        <equipo  Racha="Santos">
+            <partido>
+                <ultimospartidos>CF Montréal 3-0 Santos</ultimospartidos>
+                <fecha>23 Feb, 2022</fecha>
+                <competencia>CONCACAF Liga Campeones</competencia>
+            </partido>
+            <partido>
+                <ultimospartidos>FC Juarez 0-0 Santos</ultimospartidos>
+                <fecha>18 Feb, 2022</fecha>
+                <competencia>Mexican Liga BBVA MX</competencia>
+            </partido>
+            <partido>
+                <ultimospartidos>Santos	1-0	CF Montréal</ultimospartidos>
+                <fecha>15 Feb, 2022</fecha>
+                <competencia>CONCACAF Liga Campeones</competencia>
+            </partido>
+            <partido>
+                <ultimospartidos>Santos 3-2 América</ultimospartidos>
+                <fecha>12 Feb, 2022</fecha>
+                <competencia>Mexican Liga BBVA MX</competencia>
+            </partido>
+            <partido>
+                <ultimospartidos>Atlas 2-1 Santos</ultimospartidos>
+                <fecha>6 Feb, 2022</fecha>
+                <competencia>Mexican Liga BBVA MX</competencia>
+            </partido>
+        </equipo>
+    </resultados>
+
+    <estadisticas>
+        <liga>Mexican Liga BBVA MX</liga>
+        <estadisticasde>
+            <TotalGoles>
+                <CruzAzul>11</CruzAzul>
+                <Santos>6</Santos>
+            </TotalGoles>
+            <GolesConsedidos>
+                <CruzAzul>5</CruzAzul>
+                <Santos>13</Santos>
+            </GolesConsedidos>
+            <DiferenciasGoles>
+                <CruzAzul>6</CruzAzul>
+                <Santos>-7</Santos>
+            </DiferenciasGoles>
+            <Asistencias>
+                <CruzAzul>6</CruzAzul>
+                <Santos>5</Santos>
+            </Asistencias>
+        </estadisticasde>
+    </estadisticas>
+
+</futbol>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <!ELEMENT futbol (resultados+, estadisticas)>
+        <!ATTLIST equipo Racha (CruzAzul | Santos) #REQUIRED>
+        <!ELEMENT resultados (equipo)>
+        <!ELEMENT equipo (partido)*>
+        <!ELEMENT partido (ultimospartidos, fecha, competencia)>
+
+        <!ELEMENT estadisticas (liga, estadisticasde)>
+        <!ELEMENT estadisticasde (TotalGoles, GolesConsedidos, DiferenciasGoles, Asistencias)>
+        <!ELEMENT TotalGoles (CruzAzul, Santos)>
+        <!ELEMENT GolesConsedidos (CruzAzul, Santos)>
+        <!ELEMENT DiferenciasGoles (CruzAzul, Santos)>
+        <!ELEMENT Asistencias (CruzAzul, Santos)>
+
+
+        <!ELEMENT CruzAzul (#PCDATA)>
+        <!ELEMENT Santos (#PCDATA)>
+        <!ELEMENT liga (#PCDATA)>
+        <!ELEMENT ultimospartidos (#PCDATA)>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ELEMENT competencia (#PCDATA)>

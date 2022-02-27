@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE editorial SYSTEM "editorial.dtd">
+
+<editorial>
+
+    <informe>
+
+        <Nombre_editorial>Ediciones Aranda</Nombre_editorial>
+        <descripcion>Informe de ventas para las regiones Norte, Centro y Sur</descripcion>
+        <fecha>30/09/2021</fecha>
+
+        <datos>
+            <ventas region="Norte" trimestre="1" libros_vendidos="24000"></ventas>
+            <ventas region="Norte" trimestre="2" libros_vendidos="38600"></ventas>
+            <ventas region="Norte" trimestre="3" ></ventas>
+            <ventas region="Norte" trimestre="4" ></ventas>
+
+            <ventas region="Centro" trimestre="1"></ventas>
+            <ventas region="Centro" trimestre="2" libros_vendidos="16080"></ventas>
+            <ventas region="Centro" trimestre="3" libros_vendidos="25080"></ventas>
+            <ventas region="Centro" trimestre="4" libros_vendidos="29080"></ventas>
+
+            <ventas region="Sur" trimestre="1" libros_vendidos="27000"></ventas>
+            <ventas region="Sur" trimestre="2" libros_vendidos="31400"></ventas>
+            <ventas region="Sur" trimestre="3" libros_vendidos="40100"></ventas>
+            <ventas region="Sur" trimestre="4" libros_vendidos="30000"></ventas>
+        </datos>
+
+    </informe>
+
+</editorial>

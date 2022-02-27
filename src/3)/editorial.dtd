@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <!ELEMENT editorial (informe)*>
+        <!ELEMENT informe (Nombre_editorial?, descripcion?, fecha, datos)>
+
+        <!ELEMENT datos (ventas)*>
+
+        <!ATTLIST ventas region (Norte | Centro | Sur) #REQUIRED>
+        <!ATTLIST ventas trimestre (1 | 2 | 3 | 4) #REQUIRED>
+        <!ATTLIST ventas libros_vendidos CDATA "NO_INFO">
+
+
+        <!ELEMENT ventas ANY>
+        <!ELEMENT libros_vendidos ANY>
+        <!ELEMENT Nombre_editorial (#PCDATA)>
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT fecha (#PCDATA)>
